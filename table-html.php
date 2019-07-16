@@ -139,7 +139,7 @@
             </div>
         </div>
     </a>
-    <a href="https://www.nostalgia-events.nl/steden/">
+    <a href="#">
         <div class="Rtable-cell last">
             <p>TOON ALLE STEDEN</p>
         </div>
