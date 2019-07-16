@@ -1,0 +1,100 @@
+/* TABLE STYLING HOME */
+/* Variables
+================================== */
+/* Tables
+================================== */
+.Rtable {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 3em 0;
+    padding: 0;
+  }
+  .Rtable-cell {
+    flex-grow: 1;
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+    border: solid 1px #000e;
+  }
+
+  /* Table column sizing
+  ================================== */
+  .Rtable--2cols > a {
+    width: 50%;
+  }
+  .Rtable--3cols > a {
+    width: 33.33%;
+  }
+  .Rtable--4cols > a {
+    width: 25%;
+  }
+  .Rtable--5cols > a {
+    width: 20%;
+  }
+  .Rtable--6cols > a{
+    width: 16.6%;
+  }
+  
+  /* Apply styles
+  ================================== */
+  .Rtable {
+    font-family: Bitter;
+    font-weight: 400;
+    box-sizing: border-box;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    
+  }
+  .Rtable-cell {
+    margin: -1px 0 0 0;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .Rtable-cell .first-letter{
+    font-size: 20px;
+    background: #e2bb3b;
+    padding: 0.6em 0.8em 0.6em 1em;
+    color: #fff;
+    width: 55px;
+  }
+  .Rtable-cell .city-name{
+    font-size: 19px;
+    font-weight: 700;
+    padding: 0.6em 0.8em;
+    color: #000;
+  }
+  .Rtable a:hover .Rtable-cell .first-letter{
+      background: #28be9b;
+  }
+  .Rtable a:hover .Rtable-cell .city-name{
+      color: #28be9b;
+  }
+  .Rtable .last{
+    background: #28be9b;
+    color: #fff;
+    padding: 0.6em 1.1em;
+    text-align: center;
+  }
+  .Rtable .last p{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  /* Responsive
+  ==================================== */
+  @media all and (max-width: 500px) {
+    .Rtable--collapse {
+      display: block;
+    }
+    .Rtable--collapse > .Rtable-cell {
+      width: 100% !important;
+    }
+  }
+  .no-flexbox .Rtable {
+    display: block;
+  }
+  .no-flexbox .Rtable > .Rtable-cell {
+    width: 100%;
+  }
